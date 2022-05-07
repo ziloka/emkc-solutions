@@ -31,12 +31,13 @@ function matrix(n) {
         }
         startCol++;
     }
-    return result.reverse();
+    return result;
 }
 
-let arr = matrix(Number(value1.split('x')[0]));
-let topLeft = Number(arr[0][0]);
-let topRight = Number(arr[0][arr[0].length-1]);
-let bottomLeft = Number(arr[arr.length-1][0]);
-let bottomRight = Number(arr[arr.length-1][arr.length-1]);
-console.log(topLeft+topRight+bottomLeft+bottomRight);
+// let arr = matrix(Number(value1.split('x')[0]));
+console.log(matrix(4).map((s) => s.join(' ')).join('\n'));
+// let topLeft = Number(arr[0][0]);
+// let topRight = Number(arr[0][arr[0].length-1]);
+// let bottomLeft = Number(arr[arr.length-1][0]);
+// let bottomRight = Number(arr[arr.length-1][arr.length-1]);
+// console.log(topLeft+topRight+bottomLeft+bottomRight);
