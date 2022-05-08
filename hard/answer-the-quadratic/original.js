@@ -1,12 +1,9 @@
 const value1 = process.argv[2];
 
 // write your solution here
-let a = value1.match(/^-?\d+/);
-a = a == null ? 1 : +a[0];
-let b = value1.match(/(?<=x\^2)[\+-]\d+/);
-b = b == null ? 1 : +b[0];
-let c = value1.match(/-?\d(?==\d$)/);
-c = c == null ? 1 : +c[0];
+let a = +(value1.match(/^-?\d+/)?.[0] ?? 1)
+let b = +(value1.match(/(?<=x\^2)[\+-]\d+/)?.[0] ?? 1);
+let c = +(value1.match(/-?\d(?==\d$)/)?.[0] ?? 1);
 
 let discriminant = Math.sqrt((b ** 2) - (4 * (a * c)));
 let denominator = 2 * a;
