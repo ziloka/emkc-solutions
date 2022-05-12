@@ -1,4 +1,4 @@
-const value1 = parseInt('24x24');
+const value1 = parseInt(process.argv[2]);
 
 // write your solution here
 let difference = value1-1;
