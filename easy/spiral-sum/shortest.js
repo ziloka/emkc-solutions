@@ -5,4 +5,4 @@ const n = parseInt(process.argv[2]);
 console.log(n*n*4-(n-1)*6);
 
 // the other solution
-console.log(n*n*4-n*6+6);
+// console.log(n*n*4-n*6+6);
